@@ -20,9 +20,9 @@
     </include>
 
     <!-- GNSS INS Driver -->
-    <include file="$(find-pkg-share isuzu_sensor_launch)/launch/gnss_ins.launch.xml">
+    <!-- <include file="$(find-pkg-share isuzu_sensor_launch)/launch/gnss_ins.launch.xml">
       <arg name="launch_driver" value="$(var launch_driver)"/>
-    </include>
+    </include> -->
 
     <!-- Camera Driver -->
     <!-- <include file="$(find-pkg-share sample_sensor_kit_launch)/launch/camera.launch.xml">
