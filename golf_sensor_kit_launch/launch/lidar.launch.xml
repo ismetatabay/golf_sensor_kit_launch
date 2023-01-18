@@ -11,8 +11,8 @@
 
     <group>
       <push-ros-namespace namespace="TOP"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
-        <arg name="sensor_frame" value="velodyne_top"/>
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+        <arg name="sensor_frame" value="VLS128_TOP"/>
         <arg name="device_ip" value="192.168.0.215"/>
         <arg name="port" value="2375"/>
         <arg name="scan_phase" value="360.0"/>
@@ -23,10 +23,9 @@
         <arg name="container_name" value="$(var pointcloud_container_name)"/>
       </include>
     </group>
-
     <group>
       <push-ros-namespace namespace="ML"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLP16.launch.xml">
         <arg name="sensor_frame" value="VLP16_ML"/>
         <arg name="device_ip" value="192.168.0.210"/>
         <arg name="port" value="2370"/>
@@ -40,7 +39,7 @@
     </group>
     <group>
       <push-ros-namespace namespace="F"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLP16.launch.xml">
         <arg name="sensor_frame" value="VLP16_F"/>
         <arg name="device_ip" value="192.168.0.211"/>
         <arg name="port" value="2371"/>
@@ -54,7 +53,7 @@
     </group>
     <group>
       <push-ros-namespace namespace="MR"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLP16.launch.xml">
         <arg name="sensor_frame" value="VLP16_MR"/>
         <arg name="device_ip" value="192.168.0.212"/>
         <arg name="port" value="2372"/>
@@ -68,7 +67,7 @@
     </group>
     <group>
       <push-ros-namespace namespace="BR"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLP16.launch.xml">
         <arg name="sensor_frame" value="VLP16_BR"/>
         <arg name="device_ip" value="192.168.0.213"/>
         <arg name="port" value="2373"/>
@@ -82,7 +81,7 @@
     </group>
     <group>
       <push-ros-namespace namespace="BL"/>
-      <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
+      <include file="$(find-pkg-share golf_common_sensor_launch)/launch/velodyne_VLP16.launch.xml">
         <arg name="sensor_frame" value="VLP16_BL"/>
         <arg name="device_ip" value="192.168.0.214"/>
         <arg name="port" value="2374"/>
@@ -94,7 +93,7 @@
         <arg name="container_name" value="$(var pointcloud_container_name)"/>
       </include>
     </group>
-    <include file="$(find-pkg-share test_sample_sensor_kit_launch)/launch/pointcloud_preprocessor.launch.py">
+    <include file="$(find-pkg-share golf_sensor_kit_launch)/launch/pointcloud_preprocessor.launch.py">
       <arg name="base_frame" value="base_link"/>
       <arg name="use_intra_process" value="true"/>
       <arg name="use_multithread" value="true"/>
