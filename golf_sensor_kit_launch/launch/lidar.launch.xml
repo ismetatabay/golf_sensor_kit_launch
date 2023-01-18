@@ -10,8 +10,9 @@
     <push-ros-namespace namespace="lidar"/>
 
     <group>
+      <push-ros-namespace namespace="TOP"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
-        <arg name="sensor_frame" value="VLS128"/>
+        <arg name="sensor_frame" value="velodyne_top"/>
         <arg name="device_ip" value="192.168.0.215"/>
         <arg name="port" value="2375"/>
         <arg name="scan_phase" value="360.0"/>
@@ -24,6 +25,7 @@
     </group>
 
     <group>
+      <push-ros-namespace namespace="ML"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
         <arg name="sensor_frame" value="VLP16_ML"/>
         <arg name="device_ip" value="192.168.0.210"/>
@@ -37,6 +39,7 @@
       </include>
     </group>
     <group>
+      <push-ros-namespace namespace="F"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
         <arg name="sensor_frame" value="VLP16_F"/>
         <arg name="device_ip" value="192.168.0.211"/>
@@ -50,6 +53,7 @@
       </include>
     </group>
     <group>
+      <push-ros-namespace namespace="MR"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
         <arg name="sensor_frame" value="VLP16_MR"/>
         <arg name="device_ip" value="192.168.0.212"/>
@@ -63,6 +67,7 @@
       </include>
     </group>
     <group>
+      <push-ros-namespace namespace="BR"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
         <arg name="sensor_frame" value="VLP16_BR"/>
         <arg name="device_ip" value="192.168.0.213"/>
@@ -76,6 +81,7 @@
       </include>
     </group>
     <group>
+      <push-ros-namespace namespace="BL"/>
       <include file="$(find-pkg-share common_sensor_launch)/launch/velodyne_VLS128.launch.xml">
         <arg name="sensor_frame" value="VLP16_BL"/>
         <arg name="device_ip" value="192.168.0.214"/>

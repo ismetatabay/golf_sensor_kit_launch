@@ -24,64 +24,64 @@
     <xacro:property name="calibration" value="${xacro.load_yaml('$(arg config_dir)/sensor_kit_calibration.yaml')}"/>
 
     <!-- lidar -->
-    <xacro:VLS-128 parent="sensor_kit_base_link" name="VLS128" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
+    <xacro:VLS-128 parent="sensor_kit_base_link" name="VLS128_TOP" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLS128']['x']}
-             ${calibration['sensor_kit_base_link']['VLS128']['y']}
-             ${calibration['sensor_kit_base_link']['VLS128']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLS128']['roll']}
-             ${calibration['sensor_kit_base_link']['VLS128']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLS128']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLS128_TOP_base_link']['yaw']}"
       />
     </xacro:VLS-128>
     <xacro:VLP-16 parent="sensor_kit_base_link" name="VLP16_BL" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLP16_BL']['x']}
-             ${calibration['sensor_kit_base_link']['VLP16_BL']['y']}
-             ${calibration['sensor_kit_base_link']['VLP16_BL']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLP16_BL']['roll']}
-             ${calibration['sensor_kit_base_link']['VLP16_BL']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLP16_BL']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLP16_BL_base_link']['yaw']}"
       />
     </xacro:VLP-16>
     <xacro:VLP-16 parent="sensor_kit_base_link" name="VLP16_BR" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLP16_BR']['x']}
-             ${calibration['sensor_kit_base_link']['VLP16_BR']['y']}
-             ${calibration['sensor_kit_base_link']['VLP16_BR']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLP16_BR']['roll']}
-             ${calibration['sensor_kit_base_link']['VLP16_BR']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLP16_BR']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLP16_BR_base_link']['yaw']}"
       />
     </xacro:VLP-16>
     <xacro:VLP-16 parent="sensor_kit_base_link" name="VLP16_ML" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLP16_ML']['x']}
-             ${calibration['sensor_kit_base_link']['VLP16_ML']['y']}
-             ${calibration['sensor_kit_base_link']['VLP16_ML']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLP16_ML']['roll']}
-             ${calibration['sensor_kit_base_link']['VLP16_ML']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLP16_ML']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLP16_ML_base_link']['yaw']}"
       />
     </xacro:VLP-16>
     <xacro:VLP-16 parent="sensor_kit_base_link" name="VLP16_MR" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLP16_MR']['x']}
-             ${calibration['sensor_kit_base_link']['VLP16_MR']['y']}
-             ${calibration['sensor_kit_base_link']['VLP16_MR']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLP16_MR']['roll']}
-             ${calibration['sensor_kit_base_link']['VLP16_MR']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLP16_MR']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLP16_MR_base_link']['yaw']}"
       />
     </xacro:VLP-16>
     <xacro:VLP-16 parent="sensor_kit_base_link" name="VLP16_F" topic="/velodyne_points" hz="10" samples="220" gpu="$(arg gpu)">
       <origin
-        xyz="${calibration['sensor_kit_base_link']['VLP16_F']['x']}
-             ${calibration['sensor_kit_base_link']['VLP16_F']['y']}
-             ${calibration['sensor_kit_base_link']['VLP16_F']['z']}"
-        rpy="${calibration['sensor_kit_base_link']['VLP16_F']['roll']}
-             ${calibration['sensor_kit_base_link']['VLP16_F']['pitch']}
-             ${calibration['sensor_kit_base_link']['VLP16_F']['yaw']}"
+        xyz="${calibration['sensor_kit_base_link']['VLP16_F_base_link']['x']}
+             ${calibration['sensor_kit_base_link']['VLP16_F_base_link']['y']}
+             ${calibration['sensor_kit_base_link']['VLP16_F_base_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['VLP16_F_base_link']['roll']}
+             ${calibration['sensor_kit_base_link']['VLP16_F_base_link']['pitch']}
+             ${calibration['sensor_kit_base_link']['VLP16_F_base_link']['yaw']}"
       />
     </xacro:VLP-16>
     <!-- camera -->
