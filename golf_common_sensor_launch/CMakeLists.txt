@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(test_common_sensor_launch)
+project(golf_common_sensor_launch)
 
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
