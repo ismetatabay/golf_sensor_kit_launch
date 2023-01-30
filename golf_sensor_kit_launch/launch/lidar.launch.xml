@@ -15,7 +15,7 @@
         <arg name="sensor_frame" value="VLS128_TOP"/>
         <arg name="device_ip" value="192.168.0.215"/>
         <arg name="port" value="2375"/>
-        <arg name="scan_phase" value="360.0"/>
+        <arg name="scan_phase" value="300.0"/>
         <!-- TODO(fred-apex-ai) sensor_timestamp not supported anymore in ros2 driver but default values changed here -->
         <!-- <arg name="sensor_timestamp" value="false" /> -->
         <arg name="vehicle_mirror_param_file" value="$(var vehicle_mirror_param_file)"/>
