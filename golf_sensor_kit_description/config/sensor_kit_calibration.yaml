@@ -72,9 +72,9 @@ sensor_kit_base_link: #  x y z y p r and x y z qx qy qz qw for ros static transf
   VLP16_BR_base_link:
     x: -1.96048
     y: -0.901447
-    z: -1.33836
-    roll: -3.12907
-    pitch: 3.13471
+    z: -1.314370
+    roll: 0.023596
+    pitch: -0.010392
     yaw: 0.950559
   VLP16_ML_base_link:
     x: -0.0292374
